@@ -2,15 +2,12 @@ import 'react-app-polyfill/ie9';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import ScrollToTop from './showcase/scrolltotop/ScrollToTop';
 import { HashRouter } from 'react-router-dom';
+import { Button } from '../src/components/button/Button';
 
 ReactDOM.render(
     <HashRouter>
-        <ScrollToTop>
-            <App></App>
-        </ScrollToTop>
+        <Button label="Click" />
     </HashRouter>,
     document.getElementById('root')
 );
